@@ -7,10 +7,12 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import MenuBar from './components/MenuBar';
 
 function App() {
   return (
     <Router>
+      <MenuBar />
       <Router exact path="/" component={Home} />
       <Router exact path="/login" component={Login} />
       <Router exact path="/register" component={Register} />
